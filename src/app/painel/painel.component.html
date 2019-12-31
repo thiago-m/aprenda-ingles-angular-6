@@ -16,16 +16,16 @@
           {{ instrucao }}
         </h6>
 
-        <p>{{ frases[0].fraseEng }}</p>
+        <p>{{ rodadaFrase.fraseEng }}</p>
 
         <div class="form-group">
-          <textarea rows="3" class="form-control"></textarea>
+          <textarea rows="3" class="form-control" (input)="atualizaResposta($event)" ></textarea>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col text-right">
-        <button class="btn btn-primary">Verificar</button>
+        <button class="btn btn-primary" (click)="verificarResposta()" >Verificar</button>
       </div>
     </div>
   </div>

@@ -11,12 +11,16 @@
           <p>
             Infelizmente você perdeu...
           </p>
+          <button class="btn btn-primary" (click)="reiniciarJogo()">Tentar novamente</button>
         </div>
-        <div #Vitoria class="col text-center">
-          <h3 style="color: green;">
-            Você venceu!!!
-          </h3>
-        </div>
+        <ng-template #Vitoria>
+          <div class="col text-center">
+            <h3 style="color: green;">
+              Você venceu!!!
+            </h3>
+            <button class="btn btn-primary" (click)="reiniciarJogo()">Jogar novamente</button>
+          </div>
+        </ng-template>
       </div>
     </div>
   </ng-template>  

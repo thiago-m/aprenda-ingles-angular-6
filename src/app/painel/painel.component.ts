@@ -28,7 +28,6 @@ export class PainelComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    console.log('Component painel destruido')
   }
 
   public atualizaResposta(res: Event): void {
